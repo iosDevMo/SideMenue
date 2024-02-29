@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SideMenueView: View {
     @Binding var isShowing: Bool
+    @State private var selectedOption: SideMenueOptionModel?
     var body: some View {
         ZStack{
             if isShowing{
@@ -19,6 +20,16 @@ struct SideMenueView: View {
                 HStack{
                     VStack(alignment: .leading, spacing: 32){
                         SideMenueHeaderView()
+                        VStack{
+                            ForEach(SideMenueOptionModel.allCases){ option in
+                                Button {
+                                    selectedOption = option
+                                } label: {
+                                    SideMenueRowView(option: option, selectedOption: $selectedOption)
+                                }
+
+                            }
+                        }
                         Spacer()
                     }
                     .padding()
