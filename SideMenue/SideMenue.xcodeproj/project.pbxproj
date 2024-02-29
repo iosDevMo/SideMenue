@@ -12,6 +12,7 @@
 		CDC910E62B90C9CE00CC132A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC910E52B90C9CE00CC132A /* Assets.xcassets */; };
 		CDC910E92B90C9CE00CC132A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC910E82B90C9CE00CC132A /* Preview Assets.xcassets */; };
 		CDC910F02B90CD8200CC132A /* SideMenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC910EF2B90CD8200CC132A /* SideMenueView.swift */; };
+		CDC910F22B90CF9600CC132A /* SideMenueHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC910F12B90CF9600CC132A /* SideMenueHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CDC910E52B90C9CE00CC132A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC910E82B90C9CE00CC132A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDC910EF2B90CD8200CC132A /* SideMenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueView.swift; sourceTree = "<group>"; };
+		CDC910F12B90CF9600CC132A /* SideMenueHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				CDC910E52B90C9CE00CC132A /* Assets.xcassets */,
 				CDC910E72B90C9CE00CC132A /* Preview Content */,
 				CDC910EF2B90CD8200CC132A /* SideMenueView.swift */,
+				CDC910F12B90CF9600CC132A /* SideMenueHeaderView.swift */,
 			);
 			path = SideMenue;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				CDC910F02B90CD8200CC132A /* SideMenueView.swift in Sources */,
 				CDC910E42B90C9CC00CC132A /* ContentView.swift in Sources */,
 				CDC910E22B90C9CC00CC132A /* SideMenueApp.swift in Sources */,
+				CDC910F22B90CF9600CC132A /* SideMenueHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
