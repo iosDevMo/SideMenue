@@ -11,12 +11,17 @@ struct ContentView: View {
     @State private var showMenue = false
     var body: some View {
         NavigationStack {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+            ZStack {
+                VStack {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                    Text("Hello, world!")
+                }
+                
+                SideMenueView(isShowing: $showMenue)
             }
+            .toolbar(showMenue ? .hidden : .visible, for: .navigationBar)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(content: {
@@ -28,7 +33,6 @@ struct ContentView: View {
                     })
                 }
             })
-            .padding()
         }
     }
 }
